@@ -87,6 +87,12 @@
 		firmware-blocksize = <0x20000>;
 	};
 
+	ldd_uio@0x7c000000 {
+		compatible = "ldd_uio";
+		reg = <0x7c000000 0x1000>;
+		interrupts = <0 31 4>;
+	};
+
 	clcd@10020000 {
 		compatible = "arm,pl111", "arm,primecell";
 		reg = <0x10020000 0x1000>;
